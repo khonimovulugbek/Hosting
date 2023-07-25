@@ -8,7 +8,9 @@
     --border-radius: 30px;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -175,7 +177,6 @@ a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 /* Buttons */
@@ -191,12 +192,11 @@ a {
     white-space: nowrap;
     text-align: center;
     margin: 1rem 0;
-
 }
 
 .btn--primary {
     color: #fff;
-    background: var(--color-primary)
+    background: var(--color-primary);
 }
 
 .btn--primary:hover {
@@ -205,7 +205,7 @@ a {
 
 .btn--secondary {
     color: #fff;
-    background: var(--color-secondary)
+    background: var(--color-secondary);
 }
 
 .btn--secondary:hover {
@@ -229,7 +229,7 @@ a {
 .btn--outline {
     background: #fff;
     color: var(--color-headings);
-    border: 2px solid var(--color-headings)
+    border: 2px solid var(--color-headings);
 }
 
 .btn--outline:hover {
@@ -237,17 +237,15 @@ a {
     background: var(--color-headings);
 }
 
-
 @media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem;
     }
-    
 }
 
 /* Inputs */
 
-.input{
+.input {
     padding: 1.5rem 3.5rem;
     border: 1px solid #ccc;
     border-radius: var(--border-radius);
@@ -258,7 +256,6 @@ a {
 
 ::placeholder {
     color: #cdcbd7;
-
 }
 
 .input-group {
@@ -281,5 +278,27 @@ a {
     .input {
         font-size: 1.5rem;
     }
-    
+}
+
+/* Cards */
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    overflow: hidden;
+}
+
+.card__header,
+.card__body {
+    padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.card--secondary .card__header{
+    background: var(--color-secondary);
+    color: #fff;
 }
