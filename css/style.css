@@ -200,10 +200,18 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
+    outline: 0;
     padding: 2rem 3rem;
     text-align: center;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+.btn .icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    vertical-align: middle;
 }
 
 .btn--primary {
@@ -283,7 +291,7 @@ a {
 .input-group .input {
     border: 0;
     flex-grow: 1;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -652,51 +660,74 @@ a {
 }
 
 .nav__brand {
-  transform: translateY(5px);
+    transform: translateY(5px);
 }
 
 @media screen and (min-width: 768px) {
-  .nav__toggler {
-    display: none;
-  }  
-  .nav__list {
-    width: auto;
-    display: flex;
-    font-size: 1.6rem;
-    max-height: 100%;
-    opacity: 1;
-  }
+    .nav__toggler {
+        display: none;
+    }
+    .nav__list {
+        width: auto;
+        display: flex;
+        font-size: 1.6rem;
+        max-height: 100%;
+        opacity: 1;
+    }
 
-  .nav__item {
-    border: 0;
-  }
+    .nav__item {
+        border: 0;
+    }
 }
-
 
 /* Hero */
 
 .hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
 }
 
 .hero__tagline {
-  font-size: 2rem;
-  color: #b9c3cf;
-  letter-spacing: 1px;
-  margin: 2rem 0 5rem;
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
 }
 
 .hero__image {
-  width: 100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 0;
-  }
-  .hero__content {
-    text-align: left;
-    align-self: center;
-  }
-  
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
+}
+
+.block-domain .input-group {
+    box-shadow: 0 0 30px 20px #e6ebee;
+    border: 0;
+    margin: 4rem auto;
+    max-width: 670px;
+}
+
+.block-domain__prices {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    font-size: 2rem;
+    font-weight: 600;
+    justify-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .block-domain__prices {
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    }
+    
 }
